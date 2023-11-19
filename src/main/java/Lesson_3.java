@@ -16,9 +16,9 @@ public class Lesson_3 {
         isNumberPositive(0);
         isNumberPositive(1);
         System.out.println("\ntask 4");
-        System.out.println(checkIsNumberPositive(-1));
-        System.out.println(checkIsNumberPositive(0));
-        System.out.println(checkIsNumberPositive(1));
+        System.out.println(checkIsNumberNegative(-1));
+        System.out.println(checkIsNumberNegative(0));
+        System.out.println(checkIsNumberNegative(1));
         System.out.println("\ntask 5");
         System.out.println(isYearLeap(1900));
         System.out.println(isYearLeap(1996));
@@ -104,12 +104,8 @@ public class Lesson_3 {
         }
     }
 
-    public static boolean checkIsNumberPositive(int a) {
-        if (a >= 0) {
-            return true;
-        } else {
-            return false;
-        }
+    public static boolean checkIsNumberNegative(int a) {
+        return a < 0 ? true : false;
     }
 
     public static boolean isYearLeap(int year) {
