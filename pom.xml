@@ -28,11 +28,5 @@
       <artifactId>selenium-java</artifactId>
       <version>4.14.1</version>
     </dependency>
-    <dependency>
-      <groupId>io.rest-assured</groupId>
-      <artifactId>rest-assured</artifactId>
-      <version>4.5.1</version>
-      <scope>test</scope>
-    </dependency>
   </dependencies>
 </project>
