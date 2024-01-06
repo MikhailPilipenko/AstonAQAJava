@@ -1,4 +1,8 @@
 import io.appium.java_client.android.AndroidDriver;
+import io.qameta.allure.Owner;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import jdk.jfr.Description;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
@@ -31,6 +35,9 @@ public class CalculatorGoogleTest {
     }
 
     @Test
+    @Description("This test checks the addition function")
+    @Severity(SeverityLevel.BLOCKER)
+    @Owner("Mikhail P")
     public void checkAddition() {
         driver.findElement(By.id("com.google.android.calculator:id/digit_9")).click();
         driver.findElement(By.id("com.google.android.calculator:id/op_add")).click();
@@ -43,6 +50,9 @@ public class CalculatorGoogleTest {
     }
 
     @Test
+    @Description("This test checks the substraction function")
+    @Severity(SeverityLevel.CRITICAL)
+    @Owner("Mikhail P")
     public void checkSubstraction() {
         driver.findElement(By.id("com.google.android.calculator:id/digit_8")).click();
         driver.findElement(By.id("com.google.android.calculator:id/op_sub")).click();
@@ -55,6 +65,9 @@ public class CalculatorGoogleTest {
     }
 
     @Test
+    @Description("This test checks the division function")
+    @Severity(SeverityLevel.MINOR)
+    @Owner("Mikhail P")
     public void checkDivision() {
         driver.findElement(By.id("com.google.android.calculator:id/digit_6")).click();
         driver.findElement(By.id("com.google.android.calculator:id/op_div")).click();
@@ -67,6 +80,9 @@ public class CalculatorGoogleTest {
     }
 
     @Test
+    @Description("This test checks the multiplication function")
+    @Severity(SeverityLevel.NORMAL)
+    @Owner("Mikhail P")
     public void checkMultiplication() {
         driver.findElement(By.id("com.google.android.calculator:id/digit_4")).click();
         driver.findElement(By.id("com.google.android.calculator:id/op_mul")).click();

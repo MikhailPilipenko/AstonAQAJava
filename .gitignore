@@ -2,3 +2,5 @@
 target/
 main/
 .log
+/allure-results/
+/allure-report/
